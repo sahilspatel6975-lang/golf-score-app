@@ -1,0 +1,9 @@
+{
+  "name": "Golf Scorekeeper",
+  "short_name": "Golf Score",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0b1320",
+  "description": "Mobile-friendly golf scorekeeping app for 1–4 players.",
+  "icons": []
+}

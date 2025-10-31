@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golf Scorekeeper</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Golf Scorekeeper</h1>
+    <button id="wakeLockBtn" class="secondary">Keep Screen Awake</button>
+  </header>
+
+  <main>
+    <section class="controls card">
+      <div class="row">
+        <label for="holes">Holes:</label>
+        <select id="holes">
+          <option value="9">9</option>
+          <option value="18" selected>18</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="playerCount">Players:</label>
+        <select id="playerCount">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected>4</option>
+        </select>
+      </div>
+
+      <div id="playerNames" class="row names"></div>
+
+      <div class="row buttons">
+        <button id="undoBtn" class="secondary">Undo Last</button>
+        <button id="clearLastBtn" class="secondary">Clear Last Cell</button>
+        <button id="resetBtn" class="danger">Full Reset</button>
+      </div>
+    </section>
+
+    <section class="totals card" id="totalsBar">
+      <!-- totals badges injected here -->
+    </section>
+
+    <section class="grid card">
+      <table id="scoreTable">
+        <!-- built by JS -->
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Scores auto-save. Built for mobile—use numeric keypad.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
